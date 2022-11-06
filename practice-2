@@ -1,28 +1,12 @@
-
-let str = 'In space, no one can hear you code.';
-console.log(str.split());
-console.log(str.split('e'));
-console.log(str.split(' '));
-console.log(str.split(''));
-
-// B.)
-
-const ar= ['B', 'n', 'n', 5];
-console.log(ar.join());
-console.log(ar.join('a'));
-console.log(ar.join(' ') );
-console.log(ar.join(''));
-// C.)
-
-console.log(str);
-console.log(ar);
-// D.)
-
-let p="water,space suits,food,plasma sword,batteries";
-const word=p.split(',');
-let res="";
-for (let index = 0; index <word.length; index++) {
-    res+=word[index]+' ';
-   
-}
- console.log(res);
+const cargoHold= ['oxygen tanks', 'space suits', 'parrot', 'instruction manual', 'meal packs', 'slinky', 'security blanket'];
+cargoHold[5]='space tether';
+cargoHold.pop();
+cargoHold.shift();
+cargoHold.unshift(1138);
+cargoHold.push("20 meters");
+cargoHold.splice(3,0,'keys');
+let a=cargoHold.indexOf('instruction manual');
+console.log(cargoHold.splice(a,1));
+cargoHold.splice(2,0,'cat');
+cargoHold.splice(4,0,'fob');
+console.log(cargoHold);
